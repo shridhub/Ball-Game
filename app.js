@@ -199,7 +199,7 @@ window.addEventListener('click', (e) => {
     const projectile = new Projectile(playerCenterX, playerCenterY, 9, 'gray', {x: 5*Math.cos(angle), y: 5*Math.sin(angle)})
     projectiles.push(projectile)
 })
-this.addEventListener('touchend', function(e){let angle = Math.atan2(e.clientY - playerCenterY, e.clientX - playerCenterX)
+window.addEventListener('touchend', function(e){let angle = Math.atan2(e.clientY - playerCenterY, e.clientX - playerCenterX)
     const projectile = new Projectile(playerCenterX, playerCenterY, 9, 'gray', {x: 5*Math.cos(angle), y: 5*Math.sin(angle)})
     projectiles.push(projectile)
                                              });
